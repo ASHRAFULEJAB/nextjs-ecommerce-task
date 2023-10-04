@@ -25,7 +25,7 @@ export const AuthProvider = ({ children }) => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:3000/api/auth/register",
+        "https://ecommerce-next-js-main-ashrafulejab.vercel.app/api/auth/register",
         userData
       );
       setUser(data.others);
@@ -42,7 +42,7 @@ export const AuthProvider = ({ children }) => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:3000/api/auth/login",
+        "https://ecommerce-next-js-main-ashrafulejab.vercel.app/api/auth/login",
         userData
       );
       console.log(data, "LOGIN");
