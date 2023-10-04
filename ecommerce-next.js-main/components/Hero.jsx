@@ -7,15 +7,15 @@ const Hero = () => {
     <div className="h-[500px] w-full flex justify-center mt-16 mb-[20rem]">
       <div className="relative h-[500px] w-10/12 mx-auto">
         <Image
-          className="h-[500px] object-cover rounded-xl"
+          className="h-[500px] w-full object-cover rounded-xl"
           src={woman_img}
           alt=""
         />
-        <div className="absolute top-[10rem] left-[2.5rem] flex flex-col items-center gap-4">
-          <span className="text-white text-4xl">
-            Get some nice <span className="text-orange-500">sunglasses</span>
+        <div className="absolute top-[15rem] left-[9.0rem] flex flex-col items-center gap-4">
+          <span className="text-black text-4xl">
+            Get some fresh <span className="text-orange-500">Vegtables</span>
           </span>
-          <span className="text-[#efefefe8] text-3xl">
+          <span className="text-black text-3xl">
             At a distance of a click
           </span>
           <button

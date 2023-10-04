@@ -9,6 +9,9 @@ const ProductDetails = ({ product }) => {
   const [quantity, setQuantity] = useState(1);
   const { addToCart } = useCartContext();
 
+  const [alertMessage, setAlertMessage] = useState("");
+  const [showAlert, setShowAlert] = useState(false);
+
   const addQuantity = (command) => {
     setQuantity((prev) => {
       if (command === "dec") {
@@ -20,6 +23,17 @@ const ProductDetails = ({ product }) => {
         return prev + 1;
       }
     });
+  };
+
+  const handleAddToCart = () => {
+    addToCart({ ...product, quantity });
+    setAlertMessage("Product added to the cart.");
+    setShowAlert(true);
+
+    // Hide the alert after 3 seconds
+    setTimeout(() => {
+      setShowAlert(false);
+    }, 3000);
   };
 
   return (
@@ -45,7 +59,7 @@ const ProductDetails = ({ product }) => {
               <span className="text-[20px] flex items-center gap-4">
                 Category:{" "}
                 <span className="px-4 py-2 text-[#efefef] text-[16px] bg-orange-500 rounded-xl">
-                  {product?.category}
+                  {/* {product?.category} */}
                 </span>
               </span>
               <p className="text-[20px] text-[#333]">
@@ -74,11 +88,14 @@ const ProductDetails = ({ product }) => {
                 <span className="text-orange-500 ml-2">${product?.price}</span>
               </span>
               <button
-                onClick={() => addToCart({ ...product, quantity })}
-                className="mt-auto py-2 px-5 rounded-lg flex items-center gap-4 bg-orange-400 text-[#efefef] max-w-max hover:bg-orange-500 tranistion-all"
+                onClick={handleAddToCart}
+                className="mt-auto py-2 px-5 rounded-lg flex items-center gap-4 bg-orange-400 text-[#efefef] max-w-max hover:bg-orange-500 transition-all"
               >
                 Add to Cart <AiFillShopping />
               </button>
+              {showAlert && (
+                <div className="mt-4 text-green-500">{alertMessage}</div>
+              )}
             </div>
           </div>
         </div>

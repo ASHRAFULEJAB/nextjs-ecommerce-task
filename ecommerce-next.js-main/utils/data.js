@@ -1,27 +1,27 @@
 const data = {
   products: [
     {
-      name: "nice headphones",
+      name: "MiniCat Rice",
       desc: "lorem ipsum lorem ippppppppppppsum",
       category: "headphones",
       price: 123,
-      image: "/public/images/headphones.jpg",
+      image: "/public/images/minicat.jpg",
       featured: true,
     },
     {
-      name: "amazing sunglasses",
+      name: "Best Oil",
       desc: "lorem ipsum lorem ippppppppppppsum",
       category: "sunglasses",
       price: 453,
-      image: "/public/images/womanimg.jpg",
+      image: "/public/images/best.jpg",
       featured: true,
     },
     {
-      name: "beautiful hat",
+      name: "White Egg",
       desc: "lorem ipsum lorem ippppppppppppsum",
       category: "hat",
       price: 748,
-      image: "/public/images/mancap.jpg",
+      image: "/public/images/white.jpg",
       featured: true,
     },
   ],

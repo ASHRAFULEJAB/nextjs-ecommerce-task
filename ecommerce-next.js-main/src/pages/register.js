@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useAuthContext } from "../../ctx/authContext";
+import Link from "next/link";
 
 const Register = () => {
   const [data, setData] = useState({});
@@ -12,7 +13,7 @@ const Register = () => {
   };
 
   return (
-    <div className="bg-orange-500 h-screen w-screen flex justify-center items-center">
+    <div className="bg-[#21798B] h-screen w-screen flex justify-center items-center">
       <div className="h-[45vh] w-[25vw] border border-orange-600 rounded-xl">
         <h2 className="text-center mt-6 text-2xl text-[#efefef]">Register</h2>
         <form
@@ -44,6 +45,18 @@ const Register = () => {
             Submit
           </button>
         </form>
+        <div>
+          Already have any account{" "}
+          <u>
+            <Link href="/login"> Login</Link>
+          </u>
+        </div>
+        <h2 className="text-black text-3xl">
+          Go Back to{" "}
+          <u>
+            <Link href="/">Home</Link>
+          </u>
+        </h2>
       </div>
     </div>
   );

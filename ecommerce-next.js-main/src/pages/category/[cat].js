@@ -9,7 +9,7 @@ const Category = ({ data, category }) => {
       <Layout>
         <div className="w-10/12 h-full mx-auto">
           <h2 className="text-center pt-16 text-2xl">
-            Category: <span className="text-orange-500">{category}</span>
+            Category: <span className="text-orange-500">Best Product</span>
           </h2>
           <div className="grid grid-cols-3 gap-16">
             {data?.map((product) => (

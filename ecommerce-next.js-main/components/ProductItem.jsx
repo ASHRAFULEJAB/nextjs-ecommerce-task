@@ -16,7 +16,7 @@ const ProductItem = ({ product }) => {
           <h3 className="text-orange-500 text-2xl capitalize mt-4">
             {product.name}
           </h3>
-          <span className="text-[18px]">{product.category}</span>
+          {/* <span className="text-[18px]">{product.category}</span> */}
           <span className="text-[#555]">${product.price}</span>
         </div>
       </div>
