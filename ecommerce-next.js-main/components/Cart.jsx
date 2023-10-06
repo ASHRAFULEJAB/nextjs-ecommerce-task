@@ -25,12 +25,9 @@ const Cart = () => {
       };
     });
 
-    const { data } = await axios.post(
-      "https://ecommerce-next-js-main-ashrafulejab.vercel.app/api/checkout",
-      {
-        lineItems,
-      }
-    );
+    const { data } = await axios.post("http://localhost:3000/api/checkout", {
+      lineItems,
+    });
 
     const stripe = await stripePromise;
 

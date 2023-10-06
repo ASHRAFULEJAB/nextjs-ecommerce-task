@@ -110,7 +110,7 @@ export async function getServerSideProps(ctx) {
   const id = ctx.params.id;
 
   const { data: product } = await axios.get(
-    `https://ecommerce-next-js-main-ashrafulejab.vercel.app/api/products/${id}`
+    `http://localhost:3000/api/products/${id}`
   );
 
   return {
