@@ -1,1 +1,1 @@
-- Live Link :: http://localhost:3000/
+- Live Link :: https://ecommerce-next-js-main.vercel.app/
