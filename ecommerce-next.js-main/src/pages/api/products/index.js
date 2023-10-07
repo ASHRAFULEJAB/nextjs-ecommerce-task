@@ -12,9 +12,9 @@ export default async function handler(req, res) {
       } else if (req.query.cat) {
         const catProducts = await Product.find({ category: req.query.cat });
         return res.status(200).json(catProducts);
-      } else if (req.query.search) {
+      } else if (req.query.query) {
         // Handle search query
-        const searchQuery = req.query.search;
+        const searchQuery = req.query.query;
         const searchResults = await Product.find({
           $text: { $search: searchQuery },
         });

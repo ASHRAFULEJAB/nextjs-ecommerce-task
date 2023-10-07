@@ -10,7 +10,7 @@ export default async function handler(req, res) {
         mode: "payment",
         payment_method_types: ["card"],
         success_url: "http://localhost:3000/success",
-        cancel_url: "http://localhost:3000/",
+        cancel_url: "http://localhost:3000",
       });
 
       return res.status(201).json(session);

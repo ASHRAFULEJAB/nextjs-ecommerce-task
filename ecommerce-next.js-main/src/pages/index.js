@@ -20,7 +20,7 @@ export default function Home({ featuredProducts }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <>
-        <Navbar />
+        <Navbar products={featuredProducts} />
         <Hero />
         <Categories />
         <FeaturedProducts products={featuredProducts} />
