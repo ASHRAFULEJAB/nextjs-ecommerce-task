@@ -57,7 +57,6 @@ const Navbar = ({ products }) => {
     setSearchResults(filteredProducts);
   };
 
-  
   return (
     <div className="relative bg-orange-500 text-[#efefef] py-2 px-6 lg:h-[60px] w-full z-50">
       <div className="lg:w-10/12 mx-auto flex justify-between items-center relative">
@@ -207,7 +206,6 @@ const Navbar = ({ products }) => {
           ))}
         </div>
       )}
-      
     </div>
   );
 };
