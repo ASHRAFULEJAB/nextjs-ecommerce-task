@@ -191,15 +191,6 @@ const Navbar = ({ products }) => {
                       alt=""
                     />
                   </span>
-                  {/* <button
-                      className="btn bg-orange-600 p-4 text-white"
-                      onClick={openModal}
-                    >
-                      View Details
-                    </button>
-                    {isModalOpen && (
-                      <ProductModal product={product} closeModal={closeModal} />
-                    )} */}
                 </div>
               </div>
             </div>
